@@ -17,6 +17,7 @@
     - css
       - main.css
   - src
+    - controllers
     - server.js
     - app.js
     - database
@@ -28,7 +29,7 @@
         - addFlower.js
     - views 
       - partial
-        -partialTitle.hbs
+        -title.hbs
       - layout
         - main.hbs
       - home.hbs
@@ -40,7 +41,7 @@
   
 ### Scheme:
 
-![](https://files.gitter.im/Muniralsharif/RQnA/Hockey-ERD.png)
+![](https://files.gitter.im/Muniralsharif/VB0w/thumb/Hockey-ERD-_1_.png)
  
 ### EndPoints:
 ```
