@@ -58,12 +58,13 @@ POST request => insert into database
 
 ```
 ### Instructions :
-  - npm i pg env2 command 
-  - CREATE DATABASE (nameOfDB) - command
-  - CREATE USER (userName) with password 'password' - command
-  - GRANT ALL PRIVILEGES ON DATABASE (nameOfDB) to (userName) -command
+  - clone the repo and be there (cd command)
+  - npm i 
+  - CREATE DATABASE (nameOfDB) 
+  - CREATE USER (userName) with password 'password' 
+  - GRANT ALL PRIVILEGES ON DATABASE (nameOfDB) to (userName) 
   - go to root and make config.env file
-  - Copy paste this into the file. "DB_URL = postgres://userName:password@localhost:5432/nameOfDB". This is to establish connection between our server and database. And it is used throughout the code of the app.
+  - add DATABASE_URL in config.env
 
 ### Team members:
 - [Nadeen](https://github.com/Nadeen123)
