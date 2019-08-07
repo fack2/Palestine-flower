@@ -22,12 +22,13 @@
 
 </form>
  </div>
-<ul>
-    {{#each data}}
-    <li>{{this.name}}
-        <img src="{{this.img}}" />
-    </li>
+{{#each data}}
 
-    {{/each }}
-
-</ul>
+<div class="card">
+<a href="{{getFlower this.id}}"> <img src="{{this.img}}" alt="Avatar" />
+<div class="container">
+<h4><b>{{this.name}}</b></h4>
+</div>
+</a>
+</div>
+{{/each }}
