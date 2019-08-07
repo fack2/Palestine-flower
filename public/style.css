@@ -1,0 +1,33 @@
+body {}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: center;
+    background: radial-gradient(#ABB7B0, transparent);
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    margin: auto;
+}
+
+h1,
+h4 {
+    text-align: center;
+    color: pink;
+
+}
+
+
+h2 {
+    size: 10px;
+    text-align: center;
+}
+
+.toJustify {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

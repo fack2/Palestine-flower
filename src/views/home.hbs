@@ -1,10 +1,9 @@
-<h1>hello </h1>
-<ul>
-    {{#each data}}
-    <a href="{{getFlower this.id}}" <li>{{this.name}}
-        <img src="{{this.img}}" />
-        </li>
+{{#each data}}
+<div class="card">
+    <a href="{{getFlower this.id}}"> <img src="{{this.img}}" alt="Avatar" />
+        <div class="container">
+            <h4><b>{{this.name}}</b></h4>
+        </div>
     </a>
-    {{/each }}
-
-</ul>
+</div>
+{{/each }}
