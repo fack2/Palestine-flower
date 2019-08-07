@@ -1,9 +1,13 @@
-const express =require('express')
+const express = require('express')
 const router = express.Router();
-const {getData} = require('./homeController')
-router.get('/',getData)
+const {
+    getData
+} = require('./homeController')
+const {
+    getFlower
+} = require('./flowerController')
 
+router.get('/', getData)
+router.get('/flower/:id', getFlower)
 
-
-
-module.exports=router;
+module.exports = router;
