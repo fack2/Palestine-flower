@@ -1,5 +1,28 @@
-
+<link href="/public/style.css" rel="stylesheet">
 <h1>hello </h1>
+
+<button id="movebutton"    type="button" class="app_drawer__button">
+    AddFlower
+</button>
+<div class="app_drawer">
+<form action="/addFlower" class="formadd" method="post"> 
+
+<label for="name">Flower Name:</label> <input type="text" name="name" value="" placeholder="Flower Name" required>
+
+<label for="arabicname">Arabic Name:</label> <input type="text" name="arabicname" value="" placeholder="Arabic Name" required>
+
+<label for="img_url">Image</label> <input type="text" name="imgUrl" value="" required> <br>
+
+
+<label for="description">Description:</label> <input type="text" name="description" value="" placeholder="description" required>
+
+
+<button   class="button"  type="submit">
+    submit
+</button>
+
+</form>
+ </div>
 <ul>
     {{#each data}}
     <li>{{this.name}}
@@ -9,4 +32,6 @@
     {{/each }}
 
 </ul>
+
+
 
