@@ -1,7 +1,9 @@
 <h1>hello </h1>
 <ul>
     {{#each data}}
-    <a href="/flower/{{this.id}}" <li>{{this.name}}
+    <a href="{{getFlower this.id}}" <li>{{this.name}}
+
+        {{!-- <a href="/flower/{{this.id}}" <li>{{this.name}} --}}
         <img src="{{this.img}}" />
         </li>
     </a>
