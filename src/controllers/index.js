@@ -1,17 +1,19 @@
-const express = require('express')
+const express = require("express");
 const router = express.Router();
-const {getData} = require('./homeController')
-const {addone}= require("./addflowerController")
-router.get('/',getData)
+const { getData } = require("./homeController");
+const { addone } = require("./addflowerController");
+const errors = require("./errors");
 
-const {
-    getFlower
-} = require('./flowerController')
+const { getFlower } = require("./flowerController");
 
-router.get('/flower/:id', getFlower)
+router.get("/", getData);
 
-router.post('/addFlower',addone )
+router.get("/flower/:id", getFlower);
+
+router.post("/addFlower", addone);
 
 
+router.use(errors.pageNotFound);
+router.use(errors.serverError);
 
-module.exports=router;
+module.exports = router;
