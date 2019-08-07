@@ -2,10 +2,10 @@ const addFlower = require('../database/queries/addflower')
 exports.addone = (request,response)=>{
 
     
-const input=request.body
 
+const {name,arabicname,imgUrl,description} =request.body; 
 
-    addFlower(input.name,input. arabicname,input.imgUrl,input.description,(err,res)=>{
+    addFlower(name,arabicname,imgUrl,description,(err,res)=>{
  if(err){
     console.log(err)
  }else{
