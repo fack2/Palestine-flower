@@ -6,8 +6,13 @@ const sql = fs
   .readFileSync(`${__dirname}/db_build.sql`)
   .toString()
 
-dbConnection.query(sql, (err, res) => {
-  if (err) {
-    throw err
-  }
-})
+  const runDbBuild = cb => dbConnection.query(sql, cb);
+
+  runDbBuild((err, res) => {
+    if (err) {
+      throw err;
+    }
+    return res;
+  });
+  
+  module.exports = runDbBuild;
