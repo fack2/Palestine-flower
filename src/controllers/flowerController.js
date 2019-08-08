@@ -1,19 +1,15 @@
 const getOneFlower = require("../database/queries/getOne");
-
+const alert = require('alert-node')
 exports.getFlower = (request, response) => {
   const { id } = request.params;
 
   getOneFlower(id, (err, res) => {
-    if (err) {
-      console.log(err);
+    if (err || res.length <=0) {
+        alert("there is no flower in this path")
     } else {
-      if (!res) {
         response.render("flower", {
           data: res
         });
-      } else {
-        response.redirect("/");
       }
-    }
   });
 };
