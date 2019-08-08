@@ -9,7 +9,7 @@ const {name,arabicname,imgUrl,description} =request.body;
  if(err){
     console.log(err)
  }else{
-   response.send("success")
+   response.redirect('/')
  }
 })
 
