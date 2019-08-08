@@ -4,7 +4,7 @@ const exphbs = require('express-handlebars')
 const app = express();
 const router = require('./controllers/index')
 const helpers = require('./views/helpers/index');
-app.use(express.static(path.join(__dirname,'..','public')))
+app.use(express.static(path.join(__dirname, '..', 'public')))
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(router)
@@ -16,6 +16,7 @@ app.engine(
     exphbs({
         extname: 'hbs',
         layoutsDir: path.join(__dirname, 'views', 'layouts'),
+        partialsDir: path.join(__dirname, 'views', 'partials'),
         defaultLayout: 'main',
         helpers: helpers
 

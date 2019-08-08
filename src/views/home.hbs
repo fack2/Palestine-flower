@@ -1,34 +1,35 @@
-<h1>hello </h1>
-
-<button id="movebutton"    type="button" class="app_drawer__button">
+<button id="movebutton" type="button" class="app_drawer__button">
     AddFlower
 </button>
 <div class="app_drawer">
-<form action="/addFlower" class="formadd" method="post"> 
+    <form action="/addFlower" class="formadd" method="post">
 
-<label for="name">Flower Name:</label> <input type="text" name="name" value="" placeholder="Flower Name" required>
+        <label for="name">Flower Name:</label> <input type="text" name="name" value="" placeholder="Flower Name"
+            required>
 
-<label for="arabicname">Arabic Name:</label> <input type="text" name="arabicname" value="" placeholder="Arabic Name" required>
+        <label for="arabicname">Arabic Name:</label> <input type="text" name="arabicname" value=""
+            placeholder="Arabic Name" required>
 
-<label for="img_url">Image</label> <input type="text" name="imgUrl" value="" required> <br>
-
-
-<label for="description">Description:</label> <input type="text" name="description" value="" placeholder="description" required>
+        <label for="img_url">Image</label> <input type="text" name="imgUrl" value="" required> <br>
 
 
-<button   class="button"  type="submit">
-    submit
-</button>
+        <label for="description">Description:</label> <input type="text" name="description" value=""
+            placeholder="description" required>
 
-</form>
- </div>
-{{#each data}}
 
-<div class="card">
-<a href="{{getFlower this.id}}"> <img src="{{this.img}}" alt="Avatar" />
-<div class="container">
-<h4><b>{{this.name}}</b></h4>
+        <button class="button" type="submit">
+            submit
+        </button>
+
+    </form>
 </div>
-</a>
+
+{{#each data}}
+<div class="card">
+    <a href="{{getFlower this.id}}"> <img src="{{this.img}}" alt="Avatar" />
+        <div class="container">
+            <h4><b>{{this.name}}</b></h4>
+        </div>
+    </a>
 </div>
 {{/each }}
