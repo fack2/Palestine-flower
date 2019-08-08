@@ -26,7 +26,7 @@ h2 {
     text-align: center;
 }
 
-.toJustify {
+.data-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
