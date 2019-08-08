@@ -31,3 +31,27 @@ h2 {
     flex-direction: column;
     justify-content: center;
 }
+.formadd{
+display: flex;
+flex-direction: column;
+
+
+}
+input[type="text"] {
+    width: 92.5vw;
+    display: block;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 216);
+    padding-left: 5px;
+  }
+  label{
+      margin-bottom: 2px;
+      
+  }
+  .button {
+
+    
+    border-radius: 10px;
+    width: 21.5vw;  
+    margin: 5px auto;
+  }
